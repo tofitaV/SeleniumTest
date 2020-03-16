@@ -1,0 +1,10 @@
+C:\Users\rjhe\source\repos\Test\App\bin\Debug\netcoreapp3.1\App.exe
+C:\Users\rjhe\source\repos\Test\App\bin\Debug\netcoreapp3.1\App.deps.json
+C:\Users\rjhe\source\repos\Test\App\bin\Debug\netcoreapp3.1\App.runtimeconfig.json
+C:\Users\rjhe\source\repos\Test\App\bin\Debug\netcoreapp3.1\App.runtimeconfig.dev.json
+C:\Users\rjhe\source\repos\Test\App\bin\Debug\netcoreapp3.1\App.dll
+C:\Users\rjhe\source\repos\Test\App\bin\Debug\netcoreapp3.1\App.pdb
+C:\Users\rjhe\source\repos\Test\App\obj\Debug\netcoreapp3.1\App.AssemblyInfoInputs.cache
+C:\Users\rjhe\source\repos\Test\App\obj\Debug\netcoreapp3.1\App.AssemblyInfo.cs
+C:\Users\rjhe\source\repos\Test\App\obj\Debug\netcoreapp3.1\App.dll
+C:\Users\rjhe\source\repos\Test\App\obj\Debug\netcoreapp3.1\App.pdb
