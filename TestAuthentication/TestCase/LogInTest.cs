@@ -3,7 +3,6 @@ using NUnit.Framework;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OnlineStore.PageObject;
-using MSTest = Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestAuthentication
 {
@@ -36,7 +35,7 @@ namespace TestAuthentication
             var emailNegative = "eruguequge@gmail.com";
             loginPage.LoginToApplication(emailNegative, password);
             Thread.Sleep(2000);
-            MSTest.Assert.AreEqual(authAlert, loginPage.ErrorMessageAuth());
+            Assert.AreEqual(authAlert, loginPage.ErrorMessageAuth());
         }
 
         [Test]
@@ -44,7 +43,7 @@ namespace TestAuthentication
         {
             loginPage.LoginToApplication(email, password);
             Thread.Sleep(2000);
-            MSTest.Assert.AreEqual(fullName, accountPage.LogedUser());
+            Assert.AreEqual(fullName, accountPage.LogedUser());
         }
 
         [Test]
@@ -53,7 +52,7 @@ namespace TestAuthentication
             var passwordNegative = "eruguequge@gmail.com";
             loginPage.LoginToApplication(email, passwordNegative);
             Thread.Sleep(2000);
-            MSTest.Assert.AreEqual(authAlert, loginPage.ErrorMessageAuth());
+            Assert.AreEqual(authAlert, loginPage.ErrorMessageAuth());
         }
 
         [TestFixtureTearDown]

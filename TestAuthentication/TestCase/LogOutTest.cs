@@ -3,7 +3,6 @@ using OnlineStore.PageObject;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using System.Threading;
-using MSTest = Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace TestAuthentication.TestCase
 {
@@ -35,10 +34,10 @@ namespace TestAuthentication.TestCase
         {
             loginPage.LoginToApplication(email, password);
             Thread.Sleep(2000);
-            MSTest.Assert.AreEqual(fullName, accountPage.LogedUser());
+            Assert.AreEqual(fullName, accountPage.LogedUser());
             accountPage.LogOut();
             Thread.Sleep(2000);
-            MSTest.Assert.IsTrue(loginPage.SubmitButtonText().Contains(submitText));
+            Assert.IsTrue(loginPage.SubmitButtonText().Contains(submitText));
         }
 
         [TestFixtureTearDown]
