@@ -21,7 +21,7 @@ namespace TestAuthentication.TestCase
         LoginPage loginPage = new LoginPage(driver);
         MyAccountPage accountPage = new MyAccountPage(driver);
 
-        [TestFixtureSetUp]
+        [SetUp]
         public void SetUp()
         {
             driver.Url = "http://automationpractice.com/";

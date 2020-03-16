@@ -21,7 +21,7 @@ namespace TestAuthentication
         LoginPage loginPage = new LoginPage(driver);
         MyAccountPage accountPage = new MyAccountPage(driver);
 
-        [TestFixtureSetUp]
+        [SetUp]
         public void SetUp()
         {
             driver.Url = "http://automationpractice.com/";
@@ -41,6 +41,7 @@ namespace TestAuthentication
         [Test]
         public void PossitiveTest()
         {
+            Thread.Sleep(2000);
             loginPage.LoginToApplication(email, password);
             Thread.Sleep(2000);
             Assert.AreEqual(fullName, accountPage.LogedUser());
@@ -49,6 +50,7 @@ namespace TestAuthentication
         [Test]
         public void NegativePassword()
         {
+            Thread.Sleep(2000);
             var passwordNegative = "eruguequge@gmail.com";
             loginPage.LoginToApplication(email, passwordNegative);
             Thread.Sleep(2000);
